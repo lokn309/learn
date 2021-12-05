@@ -17,4 +17,9 @@
         <property name="address" value="广东省广州市"/>
     </bean>
 
+    <bean name="factoryBean" class="lokn.spring.factory.MyFactory" factory-method="getFactoryBean"/>
+
+    <bean name="myInstance" class="lokn.spring.factory.MyInstance"/>
+    <bean name="instanceBean" factory-bean="myInstance" factory-method="getInstanceBean"/>
+
 </beans>
